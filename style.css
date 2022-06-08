@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* stylr*/
+
+body {
+	font: 16px/400px, arial, sans-serif;
+	background-color: #eaeaea;
+	color: #333;
+	background-image: url(img/food.png);
+}
+.top-bar{
+	position: fixed;
+	top:  0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: lightskyblue;
+	border-bottom: 4px solid violet;
+	z-index: 9999;
+}
+.container {
+	width: 850px;
+	margin: 80px auto;
+	background-color: #fff;
+	position: relative;
+	border-radius: 25px;
+}
+
+.header {
+	padding: 25px;
+	padding-bottom: 10px;
+}
+
+
+.header .judul {
+	font-size: 70px;
+	font-weight: bold;
+	font-family: 'Smooch Sans', sans-serif;
+	color: rgba(255, 165, 0, 1.80);
+	text-align: center;
+	text-shadow: 3px 0px 2px black;
+}
+.header ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px;
+
+}
+.header a{
+	text-decoration: none;
+	color: violet;
+	padding: 3px;
+
+}
+.header a:hover{
+	background-color: lightskyblue;
+	background-color: blue;
+}
+
+.hero {
+	height: 350px;
+	background-image: url(img/data-security.jpg);
+	background-size: cover;
+	background-position: 0 -100px;
+	border-top: 5px solid salmon;
+	border-bottom: 5px solid lightgoldenrodyellow;
+	
+}
+
+.main{
+	width: 500px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+.main h1 {
+	font-size: 40px;
+	font-weight: bold;
+}
+.main .penulis{
+	font-size: 16px;
+	margin-top: 5px;
+
+}
+.main .penulis a {
+	color: salmon;
+	text-decoration: none;
+}
+
+.main p  {
+	margin-bottom: 25px;
+	font: 14px/25px arial;
+}
+
+/*sadebar*/
+
+.sidebar{
+	width: 300px;
+	float: right;
+	padding: 20px;
+}
+.sidebar h4 {
+	font-family: 'Smooch Sans', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+
+
+.sidebar p {
+	font: 20px/20px 'Smooch Sans', sans-serif;;
+	margin-top: 80px;
+	padding-right: 20px;
+	text-shadow: 2px 5px 2px violet;
+}
+.footer  {
+	background-color: #333;
+	padding: 20px;
+}
+.footer .copy {
+	color: wheat;
+	text-align: center;
+	font-size: 12px;
+	font-weight: initial;
+}
+h2{
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.sidebar .foto1 {
+	border: 5px solid violet;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 1.75);
+	margin-top: 5px;
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	background-image: url(img/hlm.png);
+	background-color: salmon;
+	background-repeat: no-repeat;
+	border-radius: 50% 50% 50% 0% ;
+	float: left;
+
+}
+.penulis ul li {
+ display: flex;
+ font: 14px/20px arial;
+ float: right;
+}
+.yt {
+	width: 200px;
+	height: 200px;
+	background-image: url(img/foto2.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -99999px;
+	position: absolute;
+	top: -9px;
+	right: -10px;
+	border-radius: 30px;
+}
+
+
+
+
+/* clearfix */
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf{
+	*zoom: 1;
+}
